@@ -5,6 +5,7 @@ exports.up = (knex) => {
         table.string('name', 128).notNullable(); 
     }); 
 }; 
+
 exports.down = (knex) => { 
     return knex.schema.dropTableIfExists('profiles'); 
 };
